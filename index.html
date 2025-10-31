@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Math Master — Class 9 (Complete Syllabus)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">∑</div>
+        <div>
+          <h1>Math Master — Class 9</h1>
+          <p class="tag">Complete textbook-level notes • Interactive quizzes • 3 themes • Search</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <input id="searchInput" class="search" type="search" placeholder="Search topics, e.g. 'Pythagoras'..." aria-label="Search topics">
+        <div class="theme-toggle" role="toolbar" aria-label="Theme switcher">
+          <button class="btn small" data-theme="colorful" title="Colorful theme">🌈</button>
+          <button class="btn small" data-theme="professional" title="Professional theme">🧮</button>
+          <button class="btn small" data-theme="dark" title="Dark theme">🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <div class="container toc-inner">
+      <a href="#sets">1. Sets</a>
+      <a href="#taxation">2. Taxation</a>
+      <a href="#geometry">3. Geometry</a>
+      <a href="#realnumbers">4. Real Numbers</a>
+      <a href="#algebra">5. Algebra</a>
+      <a href="#mensuration">6. Mensuration</a>
+      <a href="#trigonometry">7. Trigonometry</a>
+      <a href="#statistics">8. Statistics</a>
+      <a href="#probability">9. Probability</a>
+      <a href="#lineareq">10. Linear Equations</a>
+    </div>
+  </nav>
+
+  <main class="container" id="mainContent">
+
+    <!-- Intro -->
+    <section class="intro card animate">
+      <h2>Welcome</h2>
+      <p>This site contains full textbook-level explanations for Class 9 mathematics across 10 chapters. Each chapter contains definitions, formal statements, worked examples, diagrams, formulas, practice problems, and a 5-question quiz with automatic grading. Use the search to jump to topics. Use the theme buttons to switch styles. Click any chapter header to expand or collapse it.</p>
+    </section>
+
+    <!-- --------------------
+         CHAPTER 1: SETS
+         -------------------- -->
+    <section id="sets" class="chapter card collapsible animate" data-keywords="sets definition examples representation types venn intersection union complement cardinality laws de morgan cardinality">
+      <header class="chapter-header" tabindex="0" role="button" aria-expanded="true" aria-controls="sets-body">
+        <h3>1 · Sets</h3>
+        <div class="chapter-meta">Definition • Representation • Types • Operations • Laws • Cardinality • Venn diagrams • Examples • Quiz</div>
+      </header>
+
+      <div id="sets-body" class="chapter-body">
+        <article>
+          <h4>1.1 Definition</h4>
+          <p>A <strong>set</strong> is a well-defined collection of distinct objects considered as an object in its own right. The objects are called <em>elements</em> or <em>members</em> of the set.</p>
+          <p>Sets are usually denoted by capital letters: <code>A, B, C</code>. Elements are written in braces: <code>A = {1,2,3}</code>.</p>
+
+          <h4>1.2 Examples</h4>
+          <ul>
+            <li>Finite set: <code>{1,2,3,4}</code></li>
+            <li>Set of vowels: <code>{a,e,i,o,u}</code></li>
+            <li>Set-builder: <code>{x | x is an even number &lt; 10}</code> = <code>{0,2,4,6,8}</code></li>
+            <li>Empty (null) set: <code>∅</code> or <code>{}</code></li>
+          </ul>
+
+          <h4>1.3 Methods of Representation</h4>
+          <ol>
+            <li><strong>Roster (tabular) form:</strong> list elements inside curly braces. Example: <code>A = {1, 3, 5}</code>.</li>
+            <li><strong>Set-builder form:</strong> specify a property that elements satisfy. Example: <code>B = { x | x is an even integer less than 10 }</code>.</li>
+            <li><strong>Venn diagrams:</strong> circles showing relationships among sets — used for visualizing unions, intersections, and complements.</li>
+          </ol>
+
+          <h4>1.4 Types of Sets (with meanings & examples)</h4>
+          <table class="data-table">
+            <thead><tr><th>Type</th><th>Meaning</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><td>Finite set</td><td>Contains a finite number of elements</td><td>{2,4,6}</td></tr>
+              <tr><td>Infinite set</td><td>Not finite (no end)</td><td>{1,2,3,...}</td></tr>
+              <tr><td>Empty/Null set</td><td>Contains no elements</td><td>∅</td></tr>
+              <tr><td>Singleton set</td><td>Exactly one element</td><td>{π}</td></tr>
+              <tr><td>Subset</td><td>All elements of A are also in B</td><td>{1,2} ⊆ {1,2,3}</td></tr>
+              <tr><td>Proper subset</td><td>Subset but not equal</td><td>{1} ⊂ {1,2}</td></tr>
+              <tr><td>Universal set</td><td>All objects under consideration (context-dependent)</td><td>U = {1,2,...,10}</td></tr>
+            </tbody>
+          </table>
+
+          <h4>1.5 Operations on Sets</h4>
+          <ul>
+            <li><strong>Union (A ∪ B)</strong>: elements belonging to A or B or both. Example: <code>{1,2} ∪ {2,3} = {1,2,3}</code>.</li>
+            <li><strong>Intersection (A ∩ B)</strong>: elements common to both A and B. Example: <code>{1,2} ∩ {2,3} = {2}</code>.</li>
+            <li><strong>Difference (A \ B)</strong>: elements in A not in B. Example: <code>{1,2,3} \ {2} = {1,3}</code>.</li>
+            <li><strong>Complement (A')</strong>: elements in universal set U not in A. If <code>U = {1..5}</code> and <code>A = {1,2}</code>, then <code>A' = {3,4,5}</code>.</li>
+          </ul>
+
+          <h4>1.6 Laws of Set Algebra (with formulas)</h4>
+          <ul>
+            <li><strong>Commutative laws:</strong> <code>A ∪ B = B ∪ A</code>, <code>A ∩ B = B ∩ A</code>.</li>
+            <li><strong>Associative laws:</strong> <code>(A ∪ B) ∪ C = A ∪ (B ∪ C)</code> and similar for ∩.</li>
+            <li><strong>Distributive laws:</strong> <code>A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)</code>; <code>A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)</code>.</li>
+            <li><strong>Identity laws:</strong> <code>A ∪ ∅ = A</code>, <code>A ∩ U = A</code>.</li>
+            <li><strong>Complement laws:</strong> <code>A ∪ A' = U</code>, <code>A ∩ A' = ∅</code>.</li>
+            <li><strong>De Morgan's laws:</strong> <code>(A ∪ B)' = A' ∩ B'</code>, <code>(A ∩ B)' = A' ∪ B'</code>.</li>
+            <li><strong>Idempotent laws:</strong> <code>A ∪ A = A</code>, <code>A ∩ A = A</code>.</li>
+          </ul>
+
+          <h4>1.7 Cardinality</h4>
+          <p>The <strong>cardinality</strong> of a finite set A, denoted |A|, is the number of elements in A. Example: <code>|{2,4,6}| = 3</code>.</p>
+
+          <h4>1.8 Worked Examples</h4>
+          <ol>
+            <li>Let U = {1,..,10}, A={1,2,3,4}, B={3,4,5}. Compute A∪B, A∩B, A\B, B\A and |A|, |B|. — Solution: A∪B={1,2,3,4,5}; A∩B={3,4}; A\B={1,2}; B\A={5}; |A|=4; |B|=3.</li>
+            <li>If A={1,3,5}, B={2,4,6}, show A∩B=∅ and A∪B={1,2,3,4,5,6}.</li>
+          </ol>
+
+          <h4>1.9 Venn Diagrams (visual)</h4>
+          <p>Below is a simple two-set Venn diagram. Label the regions: only A, only B, intersection, outside both.</p>
+          <div class="diagram">
+            <svg class="venn" viewBox="0 0 300 140" aria-hidden="false" role="img" aria-label="Venn diagram for sets A and B">
+              <circle cx="110" cy="70" r="52" class="c1"></circle>
+              <circle cx="190" cy="70" r="52" class="c2"></circle>
+              <text x="70" y="30">A</text>
+              <text x="240" y="30">B</text>
+              <text x="135" y="80" class="venn-label">A ∩ B</text>
+            </svg>
+          </div>
+
+          <h4>1.10 Practice Problems</h4>
+          <ol>
+            <li>If U={1..12}, A={2,4,6,8,10,12}, B={1,3,5,7,9,11}, find A∪B and A∩B.</li>
+            <li>Prove De Morgan's laws using elementwise argument.</li>
+          </ol>
+        </article>
+
+        <aside class="chapter-quiz">
+          <h4>Quick Quiz — Sets (5)</h4>
+          <form class="quiz" id="quiz-sets" data-chapter="sets">
+            <ol>
+              <li>Define a set and give an example.<br><input name="q1" type="text"></li>
+              <li>What is A ∩ B if A={1,2,3} and B={3,4}?<br><input name="q2" type="text"></li>
+              <li>State De Morgan's law for union.<br><input name="q3" type="text"></li>
+              <li>Cardinality of {0,2,4,6,8}?<br><input name="q4" type="text"></li>
+              <li>Give a proper subset of {a,b,c}.<br><input name="q5" type="text"></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="sets">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="sets">Show Answers</button>
+              <div class="quiz-result" id="result-sets" aria-live="polite"></div>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- --------------------
+         CHAPTER 2: TAXATION
+         -------------------- -->
+    <section id="taxation" class="chapter card collapsible animate" data-keywords="tax taxation taxes direct indirect income gst vat principles equity types examples formula">
+      <header class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="taxation-body">
+        <h3>2 · Taxation</h3>
+        <div class="chapter-meta">Definition • Importance • Types • Principles • Short Q&A • Formula • Quiz</div>
+      </header>
+
+      <div id="taxation-body" class="chapter-body">
+        <article>
+          <h4>2.1 Definition</h4>
+          <p><strong>Taxation</strong> is the system by which a government collects money from individuals and organizations to fund public services, infrastructure and administration.</p>
+
+          <h4>2.2 Importance of Taxation</h4>
+          <ul>
+            <li>Funds public goods: schools, hospitals, roads.</li>
+            <li>Redistributes income through progressive tax systems and subsidies.</li>
+            <li>Regulates economic activity (e.g., sin taxes to discourage unhealthy consumption).</li>
+          </ul>
+
+          <h4>2.3 Types of Taxes</h4>
+          <p>Taxes are broadly classified into <strong>direct</strong> and <strong>indirect</strong> taxes:</p>
+          <table class="data-table">
+            <thead><tr><th>Tax</th><th>Direct / Indirect</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><td>Income tax</td><td>Direct</td><td>Tax on personal income</td></tr>
+              <tr><td>Corporate tax</td><td>Direct</td><td>Tax on company profits</td></tr>
+              <tr><td>GST / VAT</td><td>Indirect</td><td>Tax on goods & services</td></tr>
+              <tr><td>Excise duty</td><td>Indirect</td><td>On fuel, tobacco, liquor</td></tr>
+            </tbody>
+          </table>
+
+          <h4>2.4 Principles of Taxation</h4>
+          <ul>
+            <li><strong>Equity:</strong> fairness in distribution of tax burden.</li>
+            <li><strong>Certainty:</strong> taxpayers should know how much is due and when.</li>
+            <li><strong>Convenience:</strong> payment should be convenient for payer.</li>
+            <li><strong>Economy:</strong> cost of collection should be minimal.</li>
+          </ul>
+
+          <h4>2.5 Short Questions & Answers</h4>
+          <p><strong>Q:</strong> What is a direct tax?<br><strong>A:</strong> A tax paid directly to the government by the person on whom it is imposed (e.g., income tax).</p>
+
+          <h4>2.6 Simple Formula</h4>
+          <p><code>Tax Payable = Taxable Income × Tax Rate</code></p>
+
+          <h4>2.7 Worked Example</h4>
+          <p>If taxable income is ₹250,000 and tax rate is 10%, tax payable = ₹25,000.</p>
+        </article>
+
+        <aside class="chapter-quiz">
+          <h4>Quick Quiz — Taxation (5)</h4>
+          <form class="quiz" id="quiz-taxation" data-chapter="taxation">
+            <ol>
+              <li>Define taxation.<br><input name="q1" type="text"></li>
+              <li>Give two examples of indirect taxes.<br><input name="q2" type="text"></li>
+              <li>What is equity in taxation?<br><input name="q3" type="text"></li>
+              <li>Difference between direct & indirect tax?<br><input name="q4" type="text"></li>
+              <li>Formula for tax payable?<br><input name="q5" type="text"></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="taxation">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="taxation">Show Answers</button>
+              <div class="quiz-result" id="result-taxation" aria-live="polite"></div>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- --------------------
+         CHAPTER 3: GEOMETRY
+         -------------------- -->
+    <section id="geometry" class="chapter card collapsible animate" data-keywords="geometry angles triangles types of angles angle pair relationship congruent similar quadrilaterals circle perimeter area formulas pythagoras coordinate geometry">
+      <header class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="geometry-body">
+        <h3>3 · Geometry</h3>
+        <div class="chapter-meta">Definition • Angles • Triangles • Congruency • Similarity • Quadrilaterals • Circle • Formulas • Coordinate Geometry • Quiz</div>
+      </header>
+
+      <div id="geometry-body" class="chapter-body">
+        <article>
+          <h4>3.1 Definition & Basic Concepts</h4>
+          <p><strong>Geometry</strong> is the branch of mathematics dealing with shapes, sizes, relative positions of figures, and properties of space.</p>
+          <p>Basic objects: <strong>point</strong>, <strong>line</strong>, <strong>segment</strong>, <strong>ray</strong>, <strong>angle</strong>, <strong>plane</strong>.</p>
+
+          <h4>3.2 Types of Angles (with measures and examples)</h4>
+          <table class="data-table">
+            <thead><tr><th>Type</th><th>Measure</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><td>Acute</td><td>&lt; 90°</td><td>30°</td></tr>
+              <tr><td>Right</td><td>= 90°</td><td>90°</td></tr>
+              <tr><td>Obtuse</td><td>&gt; 90° and &lt; 180°</td><td>120°</td></tr>
+              <tr><td>Straight</td><td>= 180°</td><td>180°</td></tr>
+              <tr><td>Reflex</td><td>&gt; 180° and &lt; 360°</td><td>270°</td></tr>
+            </tbody>
+          </table>
+
+          <h4>3.3 Angle-pair relationships (meaning & example)</h4>
+          <ul>
+            <li><strong>Complementary:</strong> two angles summing to 90°. Example: 30° and 60°.</li>
+            <li><strong>Supplementary:</strong> two angles summing to 180°. Example: 110° and 70°.</li>
+            <li><strong>Vertically opposite angles:</strong> formed by two intersecting lines; opposite angles are equal.</li>
+            <li><strong>Linear pair:</strong> adjacent angles that add to 180°.</li>
+          </ul>
+
+          <h4>3.4 Triangles</h4>
+          <p>Classification by sides: <strong>equilateral</strong> (all sides equal), <strong>isosceles</strong> (two equal sides), <strong>scalene</strong> (no equal sides).</p>
+          <p>Classification by angles: <strong>acute</strong>, <strong>right</strong>, <strong>obtuse</strong>.</p>
+
+          <h5>Properties</h5>
+          <ul>
+            <li>Sum of interior angles = 180°.</li>
+            <li>An exterior angle = sum of the two opposite interior angles.</li>
+          </ul>
+
+          <h5>Congruent triangles — concept & rules</h5>
+          <p>Two triangles are <strong>congruent</strong> if they have identical shape and size. Congruency rules: <strong>SSS</strong>, <strong>SAS</strong>, <strong>ASA</strong>, <strong>RHS</strong> (for right triangles).</p>
+
+          <h5>Similar triangles — concept & rules</h5>
+          <p>Triangles are <strong>similar</strong> if their corresponding angles are equal and corresponding sides are in proportion. Rules: <strong>AA</strong>, <strong>SAS</strong>, <strong>SSS</strong> similarity.</p>
+
+          <h4>3.5 Quadrilaterals (6 types) & properties</h4>
+          <ol>
+            <li><strong>Square:</strong> all sides equal, all angles 90°.</li>
+            <li><strong>Rectangle:</strong> opposite sides equal, angles 90°.</li>
+            <li><strong>Parallelogram:</strong> opposite sides parallel and equal; opposite angles equal.</li>
+            <li><strong>Rhombus:</strong> all sides equal; diagonals bisect each other at right angles.</li>
+            <li><strong>Trapezium (trapezoid):</strong> one pair of parallel sides.</li>
+            <li><strong>Kite:</strong> two pairs of adjacent equal sides; one pair of opposite equal angles.</li>
+          </ol>
+
+          <h4>3.6 Circle — important terms & formulas</h4>
+          <p>Key terms: <strong>center</strong>, <strong>radius</strong> (r), <strong>diameter</strong> (d = 2r), <strong>chord</strong>, <strong>arc</strong>, <strong>sector</strong>.</p>
+          <p>Formulas: area = <code>πr²</code>, circumference = <code>2πr</code>, length of arc = <code>(θ/360) × 2πr</code> when θ in degrees, area of sector = <code>(θ/360) × πr²</code>.</p>
+
+          <h4>3.7 Perimeter & Area formulas (common shapes)</h4>
+          <table class="data-table">
+            <thead><tr><th>Shape</th><th>Perimeter</th><th>Area</th></tr></thead>
+            <tbody>
+              <tr><td>Square</td><td>4a</td><td>a²</td></tr>
+              <tr><td>Rectangle</td><td>2(l + b)</td><td>l × b</td></tr>
+              <tr><td>Triangle</td><td>a + b + c</td><td>1/2 × base × height</td></tr>
+              <tr><td>Parallelogram</td><td>2(a + b)</td><td>base × height</td></tr>
+              <tr><td>Rhombus</td><td>4a</td><td>(d1 × d2) / 2</td></tr>
+              <tr><td>Trapezium</td><td>a + b + c + d</td><td>1/2 × (sum of parallel sides) × height</td></tr>
+              <tr><td>Circle</td><td>2πr</td><td>πr²</td></tr>
+            </tbody>
+          </table>
+
+          <h4>3.8 Pythagoras theorem</h4>
+          <p>In a right triangle with legs <code>a</code>, <code>b</code> and hypotenuse <code>c</code>, <strong>Pythagoras' theorem</strong> states: <code>a² + b² = c²</code>. Worked example: if a=3 and b=4, c=5.</p>
+
+          <h4>3.9 Coordinate Geometry basics (distance, midpoint, section)</h4>
+          <ul>
+            <li>Distance formula between (x₁,y₁) and (x₂,y₂): <code>√((x₂ − x₁)² + (y₂ − y₁)²)</code>.</li>
+            <li>Midpoint: <code>((x₁ + x₂)/2, (y₁ + y₂)/2)</code>.</li>
+            <li>Section formula (internal division of line joining (x₁,y₁) and (x₂,y₂) in ratio m:n): <code>((mx₂ + nx₁)/(m+n), (my₂ + ny₁)/(m+n))</code>.</li>
+          </ul>
+        </article>
+
+        <aside class="chapter-quiz">
+          <h4>Quick Quiz — Geometry (5)</h4>
+          <form class="quiz" id="quiz-geometry" data-chapter="geometry">
+            <ol>
+              <li>State Pythagoras theorem.<br><input name="q1" type="text"></li>
+              <li>Give two supplementary angles (example).<br><input name="q2" type="text"></li>
+              <li>Name three triangle types by sides.<br><input name="q3" type="text"></li>
+              <li>Write area of a circle.<br><input name="q4" type="text"></li>
+              <li>Distance between (0,0) and (3,4).<br><input name="q5" type="text"></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="geometry">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="geometry">Show Answers</button>
+              <div class="quiz-result" id="result-geometry" aria-live="polite"></div>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- --------------------
+         CHAPTER 4: REAL NUMBERS
+         -------------------- -->
+    <section id="realnumbers" class="chapter card collapsible animate" data-keywords="real numbers rational irrational surd decimal expansions terminating repeating">
+      <header class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="realnumbers-body">
+        <h3>4 · Real Numbers</h3>
+        <div class="chapter-meta">Rational & Irrational • Decimal expansions • Surds • Examples • Quiz</div>
+      </header>
+
+      <div id="realnumbers-body" class="chapter-body">
+        <article>
+          <h4>4.1 Rational and Irrational Numbers</h4>
+          <p><strong>Rational numbers</strong> are numbers that can be expressed as <code>p/q</code> where p and q are integers and q ≠ 0. Examples: <code>−2, 0.75 (3/4), 1/3</code>.</p>
+          <p><strong>Irrational numbers</strong> cannot be written as a ratio of two integers. Examples: <code>√2, π, √3</code>.</p>
+
+          <h4>4.2 Decimal Expansions</h4>
+          <p>Rational numbers have decimal expansions that either terminate (e.g., 0.25) or repeat periodically (e.g., 0.333...). Irrational numbers have non-terminating, non-repeating decimals.</p>
+
+          <h4>4.3 Surds</h4>
+          <p>A <strong>surd</strong> is an expression containing an irrational root, for example <code>√3</code>. Rules for simplifying surds and rationalizing denominators are covered below.</p>
+
+          <h4>Worked Examples & Properties</h4>
+          <ol>
+            <li>Show that <code>√2</code> is irrational (classic proof by contradiction using parity).</li>
+            <li>Convert <code>1/8</code> to decimal: <code>0.125</code>.</li>
+            <li>Express <code>0.333...</code> as a fraction: <code>1/3</code>.</li>
+          </ol>
+        </article>
+
+        <aside class="chapter-quiz">
+          <h4>Quick Quiz — Real Numbers (5)</h4>
+          <form class="quiz" id="quiz-realnumbers" data-chapter="realnumbers">
+            <ol>
+              <li>Is √2 rational or irrational?<br><input name="q1" type="text"></li>
+              <li>Give a rational with repeating decimal.<br><input name="q2" type="text"></li>
+              <li>What is a surd?<br><input name="q3" type="text"></li>
+              <li>Convert 1/8 to decimal.<br><input name="q4" type="text"></li>
+              <li>Is 0 rational or irrational?<br><input name="q5" type="text"></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="realnumbers">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="realnumbers">Show Answers</button>
+              <div class="quiz-result" id="result-realnumbers" aria-live="polite"></div>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- --------------------
+         CHAPTER 5: ALGEBRA
+         -------------------- -->
+    <section id="algebra" class="chapter card collapsible animate" data-keywords="algebra algebraic expressions coefficient variable constant identities expansion factorisation methods">
+      <header class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="algebra-body">
+        <h3>5 · Algebra</h3>
+        <div class="chapter-meta">Expressions • Identities • Factorisation • Methods • Quiz</div>
+      </header>
+
+      <div id="algebra-body" class="chapter-body">
+        <article>
+          <h4>5.1 Definition & Basic Terms</h4>
+          <p>Algebra uses symbols (usually letters) to represent numbers in expressions and equations. <strong>Terms:</strong> variable, coefficient, constant, monomial, polynomial.</p>
+
+          <h4>5.2 Algebraic expressions</h4>
+          <p>Example: <code>3x² + 5x − 2</code>. Here <code>3</code> is coefficient of <code>x²</code>, <code>x</code> is variable, <code>−2</code> is constant.</p>
+
+          <h4>5.3 Types of expressions</h4>
+          <ul>
+            <li>Monomial (one term): <code>5x³</code></li>
+            <li>Binomial (two terms): <code>x + 3</code></li>
+            <li>Trinomial (three terms): <code>x² + 5x + 6</code></li>
+            <li>Polynomial: sum of monomials</li>
+          </ul>
+
+          <h4>5.4 Algebraic identities (10 important)</h4>
+          <ol>
+            <li>(a + b)² = a² + 2ab + b²</li>
+            <li>(a − b)² = a² − 2ab + b²</li>
+            <li>a² − b² = (a − b)(a + b)</li>
+            <li>(a + b + c)² = a² + b² + c² + 2ab + 2bc + 2ca</li>
+            <li>(x + y)³ = x³ + 3x²y + 3xy² + y³</li>
+            <li>(a − b)³ = a³ − 3a²b + 3ab² − b³</li>
+            <li>a³ + b³ = (a + b)(a² − ab + b²)</li>
+            <li>a³ − b³ = (a − b)(a² + ab + b²)</li>
+            <li>(a + b)(a − b) = a² − b²</li>
+            <li>Use these identities to expand and factorise quickly</li>
+          </ol>
+
+          <h4>5.5 Factorisation — methods</h4>
+          <ul>
+            <li>Common factor extraction: <code>ax + ay = a(x + y)</code></li>
+            <li>Factor by grouping: split polynomial into groups with common factors</li>
+            <li>Use identities: difference of squares, perfect square trinomials, sum/difference of cubes</li>
+          </ul>
+
+          <h4>Worked example: Factorise <code>x³ − y³</code></h4>
+          <p>Use formula: <code>(x − y)(x² + xy + y²)</code>.</p>
+        </article>
+
+        <aside class="chapter-quiz">
+          <h4>Quick Quiz — Algebra (5)</h4>
+          <form class="quiz" id="quiz-algebra" data-chapter="algebra">
+            <ol>
+              <li>Expand (x + 3)².<br><input name="q1" type="text"></li>
+              <li>Factor x² − 9.<br><input name="q2" type="text"></li>
+              <li>What is a coefficient?<br><input name="q3" type="text"></li>
+              <li>Give an example of a trinomial.<br><input name="q4" type="text"></li>
+              <li>Factor x³ − y³.<br><input name="q5" type="text"></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="algebra">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="algebra">Show Answers</button>
+              <div class="quiz-result" id="result-algebra" aria-live="polite"></div>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- --------------------
+         CHAPTER 6: MENSURATION
+         -------------------- -->
+    <section id="mensuration" class="chapter card collapsible animate" data-keywords="mensuration plane figures solid figures LSA TSA volume units formula area perimeter">
+      <header class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="mensuration-body">
+        <h3>6 · Mensuration</h3>
+        <div class="chapter-meta">Plane figures • Solids • Formulas • Units • Quiz</div>
+      </header>
+
+      <div id="mensuration-body" class="chapter-body">
+        <article>
+          <h4>6.1 Plane figures — definitions and what we measure</h4>
+          <table class="data-table">
+            <thead><tr><th>Figure</th><th>Definition</th><th>We measure</th></tr></thead>
+            <tbody>
+              <tr><td>Square</td><td>4 equal sides, right angles</td><td>Perimeter, Area</td></tr>
+              <tr><td>Rectangle</td><td>Opposite sides equal, right angles</td><td>Perimeter, Area</td></tr>
+              <tr><td>Triangle</td><td>Three-sided polygon</td><td>Perimeter, Area</td></tr>
+              <tr><td>Parallelogram</td><td>Opposite sides parallel</td><td>Perimeter, Area</td></tr>
+              <tr><td>Rhombus</td><td>All sides equal</td><td>Perimeter, Area</td></tr>
+              <tr><td>Trapezium</td><td>One pair of parallel sides</td><td>Perimeter, Area</td></tr>
+              <tr><td>Circle</td><td>All points equidistant from center</td><td>Circumference, Area</td></tr>
+            </tbody>
+          </table>
+
+          <h4>6.2 Solid figures (table: cube, cuboid, cylinder, cone, sphere, hemisphere)</h4>
+          <table class="data-table">
+            <thead><tr><th>Solid</th><th>LSA</th><th>TSA</th><th>Volume</th></tr></thead>
+            <tbody>
+              <tr><td>Cube (edge a)</td><td>4a²</td><td>6a²</td><td>a³</td></tr>
+              <tr><td>Cuboid (l,b,h)</td><td>2h(l + b)</td><td>2(lb + bh + hl)</td><td>l × b × h</td></tr>
+              <tr><td>Cylinder (r,h)</td><td>2πrh</td><td>2πr(h + r)</td><td>πr²h</td></tr>
+              <tr><td>Cone (r,l,h)</td><td>πrl</td><td>πr(l + r)</td><td>1/3 πr²h</td></tr>
+              <tr><td>Sphere (r)</td><td>—</td><td>4πr²</td><td>4/3 πr³</td></tr>
+              <tr><td>Hemisphere (r)</td><td>—</td><td>3πr²</td><td>2/3 πr³</td></tr>
+            </tbody>
+          </table>
+
+          <h4>6.3 Important formulas (13 selected)</h4>
+          <ol>
+            <li>Square area = a²</li>
+            <li>Rectangle area = l × b</li>
+            <li>Triangle area = 1/2 × base × height</li>
+            <li>Parallelogram area = base × height</li>
+            <li>Rhombus area = 1/2 × d1 × d2</li>
+            <li>Trapezium area = 1/2 × (a + b) × height</li>
+            <li>Circle area = πr²</li>
+            <li>Cube volume = a³</li>
+            <li>Cuboid volume = l × b × h</li>
+            <li>Cylinder volume = πr²h</li>
+            <li>Cone volume = 1/3 πr²h</li>
+            <li>Sphere volume = 4/3 πr³</li>
+            <li>Hemisphere volume = 2/3 πr³</li>
+          </ol>
+
+          <h4>6.4 Units of measurement</h4>
+          <table class="data-table">
+            <thead><tr><th>Quantity</th><th>Unit</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><td>Length</td><td>m, cm, mm</td><td>5 cm</td></tr>
+              <tr><td>Area</td><td>m², cm²</td><td>20 m²</td></tr>
+              <tr><td>Volume</td><td>m³, cm³</td><td>2 m³</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <aside class="chapter-quiz">
+          <h4>Quick Quiz — Mensuration (5)</h4>
+          <form class="quiz" id="quiz-mensuration" data-chapter="mensuration">
+            <ol>
+              <li>Write the volume of a cylinder.<br><input name="q1" type="text"></li>
+              <li>Area of rhombus using diagonals?<br><input name="q2" type="text"></li>
+              <li>TSA of cube with edge a?<br><input name="q3" type="text"></li>
+              <li>Convert 200 cm² to m².<br><input name="q4" type="text"></li>
+              <li>LSA of cone?<br><input name="q5" type="text"></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="mensuration">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="mensuration">Show Answers</button>
+              <div class="quiz-result" id="result-mensuration" aria-live="polite"></div>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- --------------------
+         CHAPTER 7: TRIGONOMETRY
+         -------------------- -->
+    <section id="trigonometry" class="chapter card collapsible animate" data-keywords="trigonometry ratios right triangle sin cos tan cosec sec cot table standard values">
+      <header class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="trigonometry-body">
+        <h3>7 · Trigonometry</h3>
+        <div class="chapter-meta">Definitions • Ratios • Standard values • Table • Quiz</div>
+      </header>
+
+      <div id="trigonometry-body" class="chapter-body">
+        <article>
+          <h4>7.1 Basic concept (right triangle)</h4>
+          <p>Trigonometry deals with relationships between angles and sides of triangles. For a right triangle with angle θ:</p>
+          <ul>
+            <li><strong>sin θ</strong> = opposite / hypotenuse</li>
+            <li><strong>cos θ</strong> = adjacent / hypotenuse</li>
+            <li><strong>tan θ</strong> = opposite / adjacent</li>
+            <li>Reciprocals: <strong>cosec θ</strong> = 1/sin θ, <strong>sec θ</strong> = 1/cos θ, <strong>cot θ</strong> = 1/tan θ.</li>
+          </ul>
+
+          <h4>7.2 Standard trigonometric values (0°, 30°, 45°, 60°, 90°)</h4>
+          <table class="data-table">
+            <thead><tr><th>θ</th><th>sin θ</th><th>cos θ</th><th>tan θ</th></tr></thead>
+            <tbody>
+              <tr><td>0°</td><td>0</td><td>1</td><td>0</td></tr>
+              <tr><td>30°</td><td>1/2</td><td>√3/2</td><td>1/√3</td></tr>
+              <tr><td>45°</td><td>√2/2</td><td>√2/2</td><td>1</td></tr>
+              <tr><td>60°</td><td>√3/2</td><td>1/2</td><td>√3</td></tr>
+              <tr><td>90°</td><td>1</td><td>0</td><td>undefined</td></tr>
+            </tbody>
+          </table>
+
+          <h4>7.3 Applications & Worked examples</h4>
+          <p>Use trig ratios to find missing sides/angles in right-angled triangles; applications in surveying, construction, navigation.</p>
+        </article>
+
+        <aside class="chapter-quiz">
+          <h4>Quick Quiz — Trigonometry (5)</h4>
+          <form class="quiz" id="quiz-trigonometry" data-chapter="trigonometry">
+            <ol>
+              <li>sin θ as ratio of sides.<br><input name="q1" type="text"></li>
+              <li>tan 45° = ?<br><input name="q2" type="text"></li>
+              <li>Reciprocal of cos θ?<br><input name="q3" type="text"></li>
+              <li>If opp=3 and sin θ=3/5, hypotenuse = ?<br><input name="q4" type="text"></li>
+              <li>One application of trigonometry?<br><input name="q5" type="text"></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="trigonometry">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="trigonometry">Show Answers</button>
+              <div class="quiz-result" id="result-trigonometry" aria-live="polite"></div>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- --------------------
+         CHAPTER 8: STATISTICS
+         -------------------- -->
+    <section id="statistics" class="chapter card collapsible animate" data-keywords="statistics mean median mode types of data data collection measures of central tendency grouped data formulas">
+      <header class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="statistics-body">
+        <h3>8 · Statistics</h3>
+        <div class="chapter-meta">Definition • Importance • Data types • Mean, Median, Mode • Detailed methods • Quiz</div>
+      </header>
+
+      <div id="statistics-body" class="chapter-body">
+        <article>
+          <h4>8.1 Definition & Importance</h4>
+          <p>Statistics is the art and science of collecting, organizing, presenting, analyzing and interpreting data to make decisions.</p>
+
+          <h4>8.2 Types of data & methods of collection</h4>
+          <ul>
+            <li>Primary data: collected first-hand (surveys, experiments).</li>
+            <li>Secondary data: collected from existing sources (books, internet).</li>
+            <li>Qualitative (categorical) and quantitative (numerical) data.</li>
+          </ul>
+
+          <h4>8.3 Measures of central tendency — Mean, Median, Mode (deep theory)</h4>
+          <p><strong>Mean (arithmetic mean):</strong> sum of observations divided by number of observations. For n observations x₁..xₙ: <code>mean = (Σxᵢ) / n</code>.</p>
+          <p><strong>Median:</strong> the middle value when observations are ordered. If n is even, median = average of the two middle values.</p>
+          <p><strong>Mode:</strong> the most frequent observation(s). A set may be unimodal, bimodal or have no mode.</p>
+
+          <h4>8.4 Calculations for grouped data (summary)</h4>
+          <p>For grouped data, use class midpoints and frequencies to compute mean approximately: <code>mean ≈ (Σf_i × m_i) / Σf_i</code>, where f_i is class frequency and m_i is class midpoint.</p>
+
+          <h4>Worked examples</h4>
+          <ol>
+            <li>Compute mean of 2,4,6,8,10: mean = (2+4+6+8+10)/5 = 30/5 = 6.</li>
+            <li>For data {1,2,2,3,3,4}, mode is {2,3} (bimodal), median is average of middle two = (2+3)/2 = 2.5.</li>
+          </ol>
+        </article>
+
+        <aside class="chapter-quiz">
+          <h4>Quick Quiz — Statistics (5)</h4>
+          <form class="quiz" id="quiz-statistics" data-chapter="statistics">
+            <ol>
+              <li>Define mean.<br><input name="q1" type="text"></li>
+              <li>How to find median if n is even?<br><input name="q2" type="text"></li>
+              <li>Example where mode is not unique?<br><input name="q3" type="text"></li>
+              <li>One method of data collection?<br><input name="q4" type="text"></li>
+              <li>Compute mean of 2,4,6,8,10.<br><input name="q5" type="text"></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="statistics">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="statistics">Show Answers</button>
+              <div class="quiz-result" id="result-statistics" aria-live="polite"></div>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- --------------------
+         CHAPTER 9: PROBABILITY
+         -------------------- -->
+    <section id="probability" class="chapter card collapsible animate" data-keywords="probability sample space events favourable outcomes total outcomes dice coin basic rules">
+      <header class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="probability-body">
+        <h3>9 · Probability</h3>
+        <div class="chapter-meta">Basic definitions • Examples with coin & dice • Simple rules • Quiz</div>
+      </header>
+
+      <div id="probability-body" class="chapter-body">
+        <article>
+          <h4>9.1 Basic definition</h4>
+          <p>Probability measures the likelihood of an event. For equally likely outcomes: <code>P(E) = favorable outcomes / total outcomes</code>.</p>
+
+          <h4>9.2 Sample space & events</h4>
+          <p>Sample space (S) is the set of all possible outcomes. Example: for coin toss S = {H, T}. An event is any subset of S.</p>
+
+          <h4>9.3 Worked examples</h4>
+          <ol>
+            <li>Probability of head in coin toss = 1/2.</li>
+            <li>Probability of getting 4 on fair die = 1/6.</li>
+            <li>Probability of even number on die = 3/6 = 1/2.</li>
+          </ol>
+        </article>
+
+        <aside class="chapter-quiz">
+          <h4>Quick Quiz — Probability (5)</h4>
+          <form class="quiz" id="quiz-probability" data-chapter="probability">
+            <ol>
+              <li>Probability of head in coin toss?<br><input name="q1" type="text"></li>
+              <li>Probability of rolling 4 on a die?<br><input name="q2" type="text"></li>
+              <li>Define sample space.<br><input name="q3" type="text"></li>
+              <li>What is an event?<br><input name="q4" type="text"></li>
+              <li>One revision tip?<br><input name="q5" type="text"></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="probability">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="probability">Show Answers</button>
+              <div class="quiz-result" id="result-probability" aria-live="polite"></div>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- --------------------
+         CHAPTER 10: LINEAR EQUATIONS
+         -------------------- -->
+    <section id="lineareq" class="chapter card collapsible animate" data-keywords="linear equations one variable two variables substitution elimination graphing slope intercept">
+      <header class="chapter-header" tabindex="0" role="button" aria-expanded="false" aria-controls="lineareq-body">
+        <h3>10 · Linear Equations</h3>
+        <div class="chapter-meta">One variable • Two variables • Methods • Graphs • Examples • Quiz</div>
+      </header>
+
+      <div id="lineareq-body" class="chapter-body">
+        <article>
+          <h4>10.1 Linear equations in one variable</h4>
+          <p>A linear equation in one variable has the form <code>ax + b = 0</code>. Solve by isolating x: <code>x = −b/a</code> when a≠0.</p>
+
+          <h4>10.2 Linear equations in two variables</h4>
+          <p>General form: <code>ax + by = c</code>. Solution is typically a pair (x,y). Methods of solution include substitution, elimination, and graphing.</p>
+
+          <h4>10.3 Methods</h4>
+          <ul>
+            <li><strong>Substitution:</strong> solve one equation for a variable and substitute.</li>
+            <li><strong>Elimination:</strong> add/subtract equations to eliminate a variable.</li>
+            <li><strong>Graphing:</strong> draw lines; intersection gives solution.</li>
+          </ul>
+
+          <h4>Worked example</h4>
+          <p>Solve: <code>2x + 3 = 11</code>. Subtract 3: <code>2x = 8</code> ⇒ <code>x = 4</code>.</p>
+        </article>
+
+        <aside class="chapter-quiz">
+          <h4>Quick Quiz — Linear Equations (5)</h4>
+          <form class="quiz" id="quiz-lineareq" data-chapter="lineareq">
+            <ol>
+              <li>Solve 2x + 3 = 11.<br><input name="q1" type="text"></li>
+              <li>Form of linear equation in two variables.<br><input name="q2" type="text"></li>
+              <li>One method to solve two linear equations.<br><input name="q3" type="text"></li>
+              <li>In y = mx + c, what is m?<br><input name="q4" type="text"></li>
+              <li>One tip to check solutions?<br><input name="q5" type="text"></li>
+            </ol>
+            <div class="quiz-actions">
+              <button type="button" class="btn" data-action="submit" data-chapter="lineareq">Submit</button>
+              <button type="button" class="btn ghost" data-action="show" data-chapter="lineareq">Show Answers</button>
+              <div class="quiz-result" id="result-lineareq" aria-live="polite"></div>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Closing / Utilities -->
+    <section class="closing card animate">
+      <h3>Next steps & utilities</h3>
+      <p>Use the <strong>Export ZIP</strong> button to get a packaged copy, or "Split into pages" to create separate files for each chapter. Quiz progress is saved locally in your browser. If you want printable PDFs of chapters or teacher answer keys, tell me and I will prepare them.</p>
+      <div class="small-cta">
+        <button class="btn" id="exportZip">Export ZIP</button>
+        <button class="btn ghost" id="splitPages">Split into pages</button>
+        <button class="btn" id="clearProgress">Clear saved progress</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made by Aachal • Class 9 Math — Complete Syllabus • Themes: Colorful / Professional / Dark</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
